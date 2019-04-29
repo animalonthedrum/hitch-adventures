@@ -1,0 +1,23 @@
+.compass {
+    width: 80px;
+    height: 80px;
+    background-image: url('./images/compass.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+        
+}
+.compassText {
+	h3 {
+		font-size: 44px;
+		font-family: $font-primary;
+		font-weight: 400;
+		color: $primary;
+	}
+	p {
+		margin-bottom: 50px;
+    }
+    a {
+		@include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px);
+    }
+}
