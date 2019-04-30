@@ -8,17 +8,17 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    &:before {
-        content:'';
-        display: block;
-        height: 90px;
-        width: 1px;
-        background-color: #fff;
-        position: absolute;
-        bottom:0;
-        right: 50%;
-        z-index: 100;
-    }
+    // &:before {
+    //     content:'';
+    //     display: block;
+    //     height: 90px;
+    //     width: 1px;
+    //     background-color: #fff;
+    //     position: absolute;
+    //     bottom:0;
+    //     right: 50%;
+    //     z-index: 100;
+    // }
 
         .videoTag {
         display: flex;
@@ -75,6 +75,16 @@
             
         }
     }
+    .scrollBar {
+        display: block;
+        height: 90px;
+        width: 1px;
+        background-color: #fff;
+        position: absolute;
+        bottom:0;
+        right: 50%;
+        z-index: 100;
+    }
 
 }
 
@@ -115,10 +125,3 @@
         opacity: 1;
         }
 }
-
-
-// .code-box-shape {
-//     width: 100px;
-//     height: 100px;
-//     background-color: blue;
-// }

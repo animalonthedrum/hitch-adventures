@@ -15,7 +15,11 @@
 		color: $primary;
 	}
 	p {
-		margin-bottom: 50px;
+        margin-bottom: 50px;
+        color: $primary;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 50px 10px;
     }
     a {
 		@include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px);

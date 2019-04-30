@@ -1,0 +1,11 @@
+.specsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: $max-content;
+    padding: 0 50px;
+    .specsL, .specsR {
+        width: calc(50% - 100px);
+        padding: 0 50px;
+    }
+}

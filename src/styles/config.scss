@@ -2,15 +2,18 @@ $transition-linear:.2s linear;
 //COLORS
 $primary:#0C2666;
 $sky:#647A91;
+$cloud:#C0C9D2;
 $mustard:#D3B400;
 $eggshell:#CBD1DD;
 $robin:#D5F1ED;
 $forest:#232D1F;
 
+
 //FONT IMPORTS & STYLES
 @import url("https://use.typekit.net/zre1kdu.css");
 $font-primary:baskerville-urw, serif; //400,500,700
 $font-italic: nunito, sans-serif; //300, 400
+$font-body: nunito, sans-serif; //300, 400
 $font-title: professor, sans-serif; //400
 
 @mixin font-title($font-title-size:72px, $font-title-color:#fff) {
@@ -29,6 +32,13 @@ $font-title: professor, sans-serif; //400
     font-style: normal;
     color: $font-h2-color;
     font-size: $font-h2-size;
+}
+@mixin h3 ($font-h3-size:44px, $font-h3-color:$primary) {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-style: normal;
+    color: $font-h3-color;
+    font-size: $font-h3-size;
 }
 
 @mixin nav-font($nav-font-color:#fff, $nav-font-size:20px) {
@@ -111,6 +121,7 @@ $breakpoint-inter-max:999px;
 
 $margin:20px;
 $padding:20px;
+$max-content:1515px;
 
 
 //Typography 
@@ -119,8 +130,19 @@ h1,h2,h3,h4,h6 {
     font-weight: 400;
     color: $primary;
 }
+h2 {
+    @include h2;
+}
+h3 {
+    @include h3;
+}
 p {
-    font-family: $font-italic;
+    font-family: $font-body;
     font-weight: 400;
     line-height: 1.44;
+    font-size: 18px;
+    color: $primary;
+}
+ul {
+    list-style: none;
 }

@@ -18,8 +18,10 @@ export default class Compass extends Component {
         <Parallax
           animation={{ rotate: 360, playScale: [0, 3] }}
           style={{ margin: '10px auto' }}
-          className="code-box-shape compass"
+          className="compass"
         />
+        {/* <img className='compassimage' src={require("../images/compass.png")}  alt="Compass"/> */}
+        {/* </Parallax> */}
       </div>
     );
   }

@@ -1,0 +1,78 @@
+.aboutContainer {
+    display: flex;
+    padding: 100px;
+    // margin-left: 200px;
+    // background: linear-gradient(to bottom, rgb($robin) 0%,  rgb($robin)50%, rgb(white) 50%);
+    background-color: $robin; 
+    @media only screen and (max-width:$breakpoint-mobile-max) {
+        flex-direction: column;
+    }
+    .aboutR {
+        flex-basis: 50%;
+    }
+    .aboutL {
+        flex-basis: 50%;
+        h3 {
+            text-align: left;
+        }
+        p {
+           max-width: 80%;
+           text-align: left;
+        }
+        ul {
+            list-style: none;
+            padding-inline-start: 0;
+            li {
+                display: flex;
+                align-items:center;
+                color: $primary;
+                font-family: $font-primary;
+                font-size: 22px;
+                line-height: 1.13;
+                font-weight: 400;
+                padding: 0 0 30px 0;
+                &:before {
+                    content:'';
+                    background-image:url('./images/compass.png');
+                    background-size: contain;
+                    height: 35px;
+                    width: 35px;
+                    display: inline-block;
+                    margin-right: $margin;
+                    
+                }
+            }
+        }
+        a {
+            @include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px);
+        }
+    }
+    .aboutR {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: -20px;
+        }
+       
+        p {
+            display: flex;
+            justify-content: center;
+        }
+        .caption {
+            font-family: $font-title;
+            color: $mustard;
+            font-size:24px;
+            margin-bottom: 0;
+        }
+        .captionDate {
+            color: $primary;
+            font-family: $font-primary;
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+    }
+}

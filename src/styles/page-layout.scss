@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.pack-page {
+  width: 100%;
+  // height: 1000px;
+  background-color: inherit;
+}
+.page0 {
+  // margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.page1, .page2 {
+  background-color: #fff;
+  height: 100%;
+  padding: 100px 0;
+}
+.page3 {
+    background-color: $cloud;
+    max-width: $max-content;
+}
+.rotate-compass {
+  width: 100%;
+  opacity: 0;
+  color: #fff;
+  font-size: 32px;
+  padding-top: 160px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+// .page2-title {
+//   width: 100%;
+//   text-align: center;
+//   color: #fff;
+//   font-size: 32px;
+// }
+.demo-content {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  background-color: #133252;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.miwi {
+    height: 100px;
+    background: turquoise;
+    width: 80px;
+}
+.nsmn {
+    height: 200px;
+    background: purple;
+    width: 200px; 
+}
+.bwca {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    background-color: #133252;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+.demo-content2 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  background-color: #e1ff9a;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+.page-title p {
+  font-size: 60px;
+  color: #fff;
+}
+.page-description {
+  padding-top: 20px;
+}
+.page-description p {
+  font-size: 18px;
+  color: #fff;
+}
+.parallax-shape {
+  line-height: 120px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  font-size: 24px;
+}
+#main {
+  padding: 0;
+}
+#main .demo {
+  padding: 0;
+}
