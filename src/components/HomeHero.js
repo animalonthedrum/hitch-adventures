@@ -24,7 +24,7 @@ export default class HomeHero extends Component {
           {/* this works tween */}
           <Parallax
             animation={{ scale: 0 }}
-            style={{ transform: "scale(1)" }}
+            style={{ transform: "scale(1)", transformOrigin:"bottom" }}
             className="scrollBar"
           />
         </div>
