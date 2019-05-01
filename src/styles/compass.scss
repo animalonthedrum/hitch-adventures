@@ -22,6 +22,6 @@
         padding: 50px 10px;
     }
     a {
-		@include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px);
+		@include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px, $width:240px);
     }
 }

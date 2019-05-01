@@ -1,0 +1,22 @@
+.founderContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include mobile{
+        flex-direction: column;
+    }
+    .founderL, .founderR {
+        flex-basis: 50%;
+    }
+    .founderL {
+        img {
+            max-width: 100%;
+        }
+    }
+    .founderR {
+        h2 {
+            font-family: $font-title;
+            color: $mustard;
+        }
+    }
+}

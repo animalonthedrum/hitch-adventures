@@ -4,17 +4,19 @@ import ReactDOM from "react-dom";
 import QueueAnim from "rc-queue-anim";
 import TweenOne from "rc-tween-one";
 import Animate from "rc-animate";
-
+// import { scrollScreen } from 'rc-scroll-anim';
 import HomeHero from "./HomeHero";
 import Compass from "./Compass";
 import About from "./About";
 import Specs from "./Specs";
 import Inspiration from "./Inspiration";
+import Founder from "./Founder";
 
 const Link = ScrollAnim.Link;
 const Element = ScrollAnim.Element;
 const ScrollOverPack = ScrollAnim.OverPack;
 const EventListener = ScrollAnim.Event;
+// ScrollAnim.scrollScreen.init({ scrollInterval: 600 });
 // ScrollAnim.scrollScreen({scrollInterval: 600});
 
 export default class Anchors extends Component {
@@ -107,10 +109,11 @@ export default class Anchors extends Component {
           >
             <HomeHero />
           </ScrollOverPack>,
-          <ScrollOverPack id="page1" className="page1" key="1">
+          <ScrollOverPack id="page1" className="pack-page page1" key="1"  style={{minHeight:'300px' }}>
             <TweenOne
               className="rotate-compass"
               key="0"
+              playScale={ 0.5}
               animation={{ opacity: 1 }}
             >
               <Compass />
@@ -140,34 +143,41 @@ export default class Anchors extends Component {
 
           <ScrollOverPack
             className="pack-page page2"
-            style={{ backgroundColor: "#fff" }}
+            style={{ backgroundColor: "#fff", minHeight:'500px' }}
             always={false}
             id="page2"
             key="2"
           >
             {/* <div className="accord" key="title"> */}
 
-            <QueueAnim key="1" type="right">
+            {/* <QueueAnim key="1" type="right"> */}
+            <TweenOne animation={{ opacity:1 }}
+                style={{ opacity: 0 }}
+                playScale={ 0.5}
+                key="title"
+                className="specs">
               <Specs />
-            </QueueAnim>
+              </TweenOne>
+            {/* </QueueAnim> */}
 
             {/* <Animate key="0" transitionName="fade" transitionAppear>
             <div className="demo-content2" />
           </Animate> */}
-            <TweenOne
+            {/* <TweenOne
               className="demo-content2"
               animation={{ y: 0, opacity: 1 }}
               key="1"
               style={{ transform: "translateY(200px)", opacity: 0 }}
-            />
+            /> */}
           </ScrollOverPack>,
 
           <ScrollOverPack
             className="pack-page page3"
-            style={{ height: "900px" }}
+            style={{ height: "100%", minHeight:'500px'  }}
             always={false}
             //this can be taken off to trigger on scroll up and down
-            playScale={0.4}
+            // playScale={0.1}
+            playScale={[0.5, 0.1]}
             id="page3"
             key="3"
           >
@@ -239,6 +249,16 @@ export default class Anchors extends Component {
                 </TweenOne>
               </div>
             </div>
+          </ScrollOverPack>,
+          <ScrollOverPack
+            className="pack-page page4"
+            style={{ height: "900px", minHeight:'500px'  }}
+            always={false}
+            playScale={[0.4, 0.6]}
+            id="page4"
+            key="4"
+          >
+            <Founder/>
           </ScrollOverPack>
         ]}
       </div>

@@ -1,18 +1,28 @@
 .aboutContainer {
     display: flex;
-    padding: 100px;
-    // margin-left: 200px;
-    // background: linear-gradient(to bottom, rgb($robin) 0%,  rgb($robin)50%, rgb(white) 50%);
-    background-color: $robin; 
+    flex-wrap: wrap;
+    padding: 100px 100px 0 100px;
+    position: relative;
     @media only screen and (max-width:$breakpoint-mobile-max) {
         flex-direction: column;
     }
-    .aboutR {
-        flex-basis: 50%;
+    .about-bg{
+        flex-basis: 100%;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        height: 730px;
+        width: 100%;
+        background-color: $robin;
+        z-index: 1;
+    }
+    .aboutR,.aboutL {
+     z-index: 10;
     }
     .aboutL {
         flex-basis: 50%;
         h3 {
+            margin-top:0;
             text-align: left;
         }
         p {
@@ -44,17 +54,20 @@
             }
         }
         a {
-            @include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px);
+            @include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px, $width:240px);
         }
     }
     .aboutR {
+        flex-basis: 50%;
         display: flex;
         flex-direction: column;
         max-width: 100%;
+        align-items: center;
         img {
             max-width: 100%;
             height: auto;
-            margin-top: -20px;
+            width: 95%;
+            object-fit: contain;
         }
        
         p {

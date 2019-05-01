@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+$page-padding:150px;
 
 .container {
   width: 100% !important;
@@ -9,6 +10,7 @@ body {
 .pack-page {
   width: 100%;
   // height: 1000px;
+  // padding:$page-padding 0 0 0;
   background-color: inherit;
 }
 .page0 {
@@ -20,20 +22,25 @@ body {
 .page1, .page2 {
   background-color: #fff;
   height: 100%;
-  padding: 100px 0;
+  padding: $page-padding 0 0 0;
+  overflow-x: hidden;
+}
+.page2 {
+  padding-bottom: $page-padding;
 }
 .page3 {
     background-color: $cloud;
     max-width: $max-content;
+    padding: 200px 0 100px 0;
 }
 .rotate-compass {
   width: 100%;
   opacity: 0;
   color: #fff;
   font-size: 32px;
-  padding-top: 160px;
+  // padding-top: 160px;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 250px;
 }
 // .page2-title {
 //   width: 100%;

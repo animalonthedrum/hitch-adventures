@@ -66,7 +66,7 @@ $font-title: professor, sans-serif; //400
         }
 }
 
-@mixin button($button-color:#fff, $button-text-color:#fff, $button-fill:$mustard, $button-font-size:20px, $padding:10px 20px){
+@mixin button($button-color:#fff, $button-text-color:#fff, $button-fill:$mustard, $button-font-size:20px, $padding:15px, $width:140px){
     border: 1px solid $button-color;
     font-family: $font-primary;
     font-size: $button-font-size;
@@ -77,6 +77,9 @@ $font-title: professor, sans-serif; //400
     position: relative;
     z-index: 2;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
     &:hover:after {
         display: none;
     }
@@ -129,6 +132,7 @@ h1,h2,h3,h4,h6 {
     font-family: $font-primary;
     font-weight: 400;
     color: $primary;
+    margin-top: 0;
 }
 h2 {
     @include h2;

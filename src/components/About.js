@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Parallax } from 'rc-scroll-anim';
 
 export default class About extends Component {
   render() {
@@ -15,10 +16,22 @@ export default class About extends Component {
           <a href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1945_custom_teardrop-camper_112723-listing" alt="Book now">Book Now</a>          
         </div>
         <div className='aboutR'>
+        <Parallax
+          animation={{ x: 0, y:0 }}
+          style={{ transform: 'translate(5%, 10%)' }}
+          // className="about-bg"
+        >
         <img src={require("../images/maidenVoyage.png")}  alt="Maiden Voyage"/>
         <p className="caption">The Maiden Voyage</p>
         <p className="captionDate">July '19</p>
+        </Parallax>
         </div>
+        <Parallax
+          animation={{ x: 0, y:0 }}
+          style={{ transform: 'translate(50%, -15%)', width:'80%' }}
+          className="about-bg"
+        >
+        </Parallax>
       </div>
     )
   }

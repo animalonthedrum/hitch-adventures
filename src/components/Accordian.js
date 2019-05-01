@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Animate from 'rc-animate';
+// import Animate from 'rc-animate';
 
 const data = [
   {
@@ -57,7 +57,6 @@ class AccordionItem extends React.Component {
     } = this
     
     return (
-      <Animate key="0" transitionName="fade" transitionAppear>
       <div className='specContainer'
         {...{
           className: `accordion-item, ${opened && 'accordion-item--opened'}`,
@@ -78,7 +77,6 @@ class AccordionItem extends React.Component {
             </div>
           </div>
       </div>
-      </Animate>
     )
   }
 }
