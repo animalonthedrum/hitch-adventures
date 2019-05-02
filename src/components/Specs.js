@@ -15,6 +15,9 @@ export default class Specs extends Component {
       <Animate key="0"  transitionName="enter" transitionAppear>
       <Accordian/>
       </Animate>
+      {/* <div className="tow" style={{display:'none'}}>
+          <a href="https://rv.campingworld.com/towguide" alt="tow guide" target="_blank" rel="noopener noreferrer" className="towGuide">Reference this Tow Guide</a>
+          </div> */}
       </div>
   
       </div>

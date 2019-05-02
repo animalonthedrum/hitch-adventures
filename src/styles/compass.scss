@@ -8,10 +8,8 @@
         
 }
 .compassText {
+    padding-top: 25px;
 	h3 {
-		font-size: 44px;
-		font-family: $font-primary;
-		font-weight: 400;
 		color: $primary;
 	}
 	p {
@@ -25,3 +23,13 @@
 		@include button($button-color:$primary,$button-text-color:$primary, $button-font-size:22px, $width:240px);
     }
 }
+
+.rotate-compass {
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    font-size: 32px;
+    // padding-top: 160px;
+    text-align: center;
+    padding-bottom: 250px;
+  }

@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-$page-padding:150px;
+$page-padding:100px;
 
 .container {
   width: 100% !important;
@@ -23,7 +23,10 @@ $page-padding:150px;
   background-color: #fff;
   height: 100%;
   padding: $page-padding 0 0 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  @include mobile {
+  padding: 50px 0;
+  }
 }
 .page2 {
   padding-bottom: $page-padding;
@@ -32,77 +35,9 @@ $page-padding:150px;
     background-color: $cloud;
     max-width: $max-content;
     padding: 200px 0 100px 0;
+    @include mobile {
+      padding: 100px 0;
+    }
 }
-.rotate-compass {
-  width: 100%;
-  opacity: 0;
-  color: #fff;
-  font-size: 32px;
-  // padding-top: 160px;
-  text-align: center;
-  padding-bottom: 250px;
-}
-// .page2-title {
-//   width: 100%;
-//   text-align: center;
-//   color: #fff;
-//   font-size: 32px;
-// }
-.demo-content {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  background-color: #133252;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-.miwi {
-    height: 100px;
-    background: turquoise;
-    width: 80px;
-}
-.nsmn {
-    height: 200px;
-    background: purple;
-    width: 200px; 
-}
-.bwca {
-    margin: 0 auto;
-    width: 100%;
-    height: 80px;
-    background-color: #133252;
-    margin-bottom: 30px;
-    border-radius: 4px;
-  }
-.demo-content2 {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  background-color: #e1ff9a;
-  margin-top: 30px;
-  border-radius: 4px;
-}
-.page-title p {
-  font-size: 60px;
-  color: #fff;
-}
-.page-description {
-  padding-top: 20px;
-}
-.page-description p {
-  font-size: 18px;
-  color: #fff;
-}
-.parallax-shape {
-  line-height: 120px;
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  font-size: 24px;
-}
-#main {
-  padding: 0;
-}
-#main .demo {
-  padding: 0;
-}
+
+

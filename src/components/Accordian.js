@@ -16,7 +16,7 @@ const data = [
   },
   {
     title: 'Totally Towable.',
-  paragraph:'Weighing in at 1,500 lbs, Hitch can be pulled with most vehicles.  Not sure what your vehicle can do? Reference this <a href="https://rv.campingworld.com/towguide">tow guide</a> (Experience towing trailers is a plus!)'
+  paragraph:'Weighing in at 1,500 lbs, Hitch can be pulled with most vehicles.  Not sure what your vehicle can do? (Experience towing trailers is a plus!)'
   }
 ]
 
@@ -74,7 +74,9 @@ class AccordionItem extends React.Component {
               <p {...{ className: 'accordion-item__paragraph' }}>
                 {paragraph}
               </p>
+              <div className="test">TEST</div>
             </div>
+           
           </div>
       </div>
     )

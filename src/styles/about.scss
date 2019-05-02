@@ -3,11 +3,15 @@
     flex-wrap: wrap;
     padding: 100px 100px 0 100px;
     position: relative;
-    @media only screen and (max-width:$breakpoint-mobile-max) {
+    @include mobile {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 30px 0 30px;
+        width: calc(100% - 60px);
+        text-align: center;
     }
     .about-bg{
-        flex-basis: 100%;
         position: absolute;
         top: 20px;
         left: 0;
@@ -15,19 +19,40 @@
         width: 100%;
         background-color: $robin;
         z-index: 1;
+        @include mobile {
+            width: 100%!important;
+            height: 60%;
+        }
+    }
+    .about-img {
+        @include mobile {
+            // transform: translate(5%, 5%)!important;  
+        }
     }
     .aboutR,.aboutL {
      z-index: 10;
     }
     .aboutL {
-        flex-basis: 50%;
+        width: 50%;
+        @include mobile {
+            width: 100%;
+            margin-bottom: 100px;
+        }
         h3 {
             margin-top:0;
             text-align: left;
+            @include mobile {
+                text-align: center;
+            }
         }
         p {
            max-width: 80%;
            text-align: left;
+           @include mobile {
+               padding-bottom: 30px;
+               text-align: center;
+               max-width: 100%;
+           }
         }
         ul {
             list-style: none;
@@ -41,6 +66,10 @@
                 line-height: 1.13;
                 font-weight: 400;
                 padding: 0 0 30px 0;
+                text-align: left!important;
+                @include mobile {
+                    font-size: 20px;
+                }
                 &:before {
                     content:'';
                     background-image:url('./images/compass.png');
@@ -58,11 +87,14 @@
         }
     }
     .aboutR {
-        flex-basis: 50%;
+       width: 50%;
         display: flex;
         flex-direction: column;
         max-width: 100%;
         align-items: center;
+        @include mobile {
+            width: 100%;
+        }
         img {
             max-width: 100%;
             height: auto;
@@ -89,3 +121,4 @@
         }
     }
 }
+

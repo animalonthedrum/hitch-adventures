@@ -19,7 +19,7 @@ export default class About extends Component {
         <Parallax
           animation={{ x: 0, y:0 }}
           style={{ transform: 'translate(5%, 10%)' }}
-          // className="about-bg"
+          className="about-img"
         >
         <img src={require("../images/maidenVoyage.png")}  alt="Maiden Voyage"/>
         <p className="caption">The Maiden Voyage</p>

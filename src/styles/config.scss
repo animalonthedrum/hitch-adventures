@@ -15,6 +15,25 @@ $font-primary:baskerville-urw, serif; //400,500,700
 $font-italic: nunito, sans-serif; //300, 400
 $font-body: nunito, sans-serif; //300, 400
 $font-title: professor, sans-serif; //400
+//BREAKPOINTS
+$breakpoint-mobile-max:767px;
+$breakpoint-inter-min:768px;
+$breakpoint-inter-max:999px;
+
+$margin:20px;
+$padding:20px;
+$max-content:1515px;
+
+@mixin mobile {
+    @media only screen and (max-width:$breakpoint-mobile-max){
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and (min-width:$breakpoint-inter-min) and (max-width:$breakpoint-inter-max){
+        @content;
+    }
+}
 
 @mixin font-title($font-title-size:72px, $font-title-color:#fff) {
     font-family: $font-title;
@@ -25,6 +44,9 @@ $font-title: professor, sans-serif; //400
     margin: 0;
     margin-block-end: 0;
     margin-block-start: 0;
+    @include mobile {
+        font-size: 40px;
+    }
 }
 @mixin h2 ($font-h2-size:40px, $font-h2-color:#fff) {
     font-family: $font-primary;
@@ -32,6 +54,9 @@ $font-title: professor, sans-serif; //400
     font-style: normal;
     color: $font-h2-color;
     font-size: $font-h2-size;
+    @include mobile {
+        font-size: 30px;
+    }
 }
 @mixin h3 ($font-h3-size:44px, $font-h3-color:$primary) {
     font-family: $font-primary;
@@ -39,6 +64,9 @@ $font-title: professor, sans-serif; //400
     font-style: normal;
     color: $font-h3-color;
     font-size: $font-h3-size;
+    @include mobile {
+        font-size: 28px;
+    }
 }
 
 @mixin nav-font($nav-font-color:#fff, $nav-font-size:20px) {
@@ -80,6 +108,9 @@ $font-title: professor, sans-serif; //400
     justify-content: center;
     align-items: center;
     width: $width;
+    @include mobile {
+        font-size: 14px;
+    }
     &:hover:after {
         display: none;
     }
@@ -106,26 +137,10 @@ $font-title: professor, sans-serif; //400
     @include button;
 }
 
-@mixin mobile {
-    @media only screen and (max-width:$breakpoint-mobile-max){
-        @content;
-    }
+
+html {
+    scroll-behavior: smooth;
 }
-@mixin tablet {
-    @media only screen and (min-width:$breakpoint-inter-min) and (max-width:$breakpoint-inter-max){
-        @content;
-    }
-}
-
-//BREAKPOINTS
-$breakpoint-mobile-max:767px;
-$breakpoint-inter-min:768px;
-$breakpoint-inter-max:999px;
-
-$margin:20px;
-$padding:20px;
-$max-content:1515px;
-
 
 //Typography 
 h1,h2,h3,h4,h6 {
@@ -146,6 +161,9 @@ p {
     line-height: 1.44;
     font-size: 18px;
     color: $primary;
+    @include mobile {
+        font-size: 12px;
+    }
 }
 ul {
     list-style: none;

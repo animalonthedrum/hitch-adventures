@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import ScrollAnim from "rc-scroll-anim";
 import ReactDOM from "react-dom";
-import QueueAnim from "rc-queue-anim";
+// import QueueAnim from "rc-queue-anim";
 import TweenOne from "rc-tween-one";
 import Animate from "rc-animate";
 // import { scrollScreen } from 'rc-scroll-anim';
 import HomeHero from "./HomeHero";
+import MobileNav from "./MobileNav";
 import Compass from "./Compass";
 import About from "./About";
 import Specs from "./Specs";
-import Inspiration from "./Inspiration";
 import Founder from "./Founder";
+import Footer from "./Footer";
 
 const Link = ScrollAnim.Link;
 const Element = ScrollAnim.Element;
@@ -94,6 +95,7 @@ export default class Anchors extends Component {
               className="nav-bar"
             />
           </ul>
+          <MobileNav/>
         </nav>
         {this.state.show && [
           <ScrollOverPack
@@ -102,14 +104,13 @@ export default class Anchors extends Component {
             key="banner"
             style={
               {
-                // margin:'25px 25px 0 25px',
-                // overflow:'hidden'
+                height:'100vh'
               }
             }
           >
             <HomeHero />
           </ScrollOverPack>,
-          <ScrollOverPack id="page1" className="pack-page page1" key="1"  style={{minHeight:'300px' }}>
+          <ScrollOverPack id="page1" className="pack-page page1" key="1"  style={{minHeight:'500px' }}>
             <TweenOne
               className="rotate-compass"
               key="0"
@@ -132,14 +133,9 @@ export default class Anchors extends Component {
                 </a>
               </div>
             </TweenOne>
-            <About />
-            {/* <QueueAnim key="1">
-            <div key="0" className="demo-content" />
-            <div key="1" className="demo-content" style={{ backgroundColor: '#F38EAD' }} />
-            <div key="2" className="demo-content" />
-            <div key="3" className="demo-content" />
-          </QueueAnim> */}
+            <About/>
           </ScrollOverPack>,
+     
 
           <ScrollOverPack
             className="pack-page page2"
@@ -202,7 +198,7 @@ export default class Anchors extends Component {
                       src={require("../images/inspiration/BoundaryWaters.png")}
                       alt="Boundary Waters"
                     />
-                    <p>Boundary Waters Canoe Wilderness Area</p>
+                    <p className='location'>Boundary Waters Canoe Wilderness Area</p>
                     <p>5 hours away</p>
                   </div>
                 </Animate>
@@ -216,7 +212,7 @@ export default class Anchors extends Component {
                     src={require("../images/inspiration/MadelineIsland.png")}
                     alt="Madeline Islands"
                   />
-                  <p>Madeline Island, WI</p>
+                  <p className='location'>Madeline Island, WI</p>
                   <p>3 hours away</p>
                 </TweenOne>
               </div>
@@ -231,7 +227,7 @@ export default class Anchors extends Component {
                     src={require("../images/inspiration/northShore.png")}
                     alt="North Shore, MN"
                   />
-                  <p>North Shore, MN</p>
+                  <p className='location'>North Shore, MN</p>
                   <p>4 hours away</p>
                 </TweenOne>
                 <TweenOne
@@ -244,7 +240,7 @@ export default class Anchors extends Component {
                     src={require("../images/inspiration/LaCrosse.png")}
                     alt="La Crosse WI"
                   />
-                  <p>La Crosse, WI </p>
+                  <p className='location'>La Crosse, WI </p>
                   <p>3 hours away</p>
                 </TweenOne>
               </div>
@@ -252,14 +248,24 @@ export default class Anchors extends Component {
           </ScrollOverPack>,
           <ScrollOverPack
             className="pack-page page4"
-            style={{ height: "900px", minHeight:'500px'  }}
+            style={{ height: "100%", minHeight:'500px'  }}
             always={false}
             playScale={[0.4, 0.6]}
             id="page4"
             key="4"
           >
             <Founder/>
-          </ScrollOverPack>
+          </ScrollOverPack>,
+          <Element
+            className="pack-page footer"
+            style={{ minHeight:'200px'  }}
+            always={false}
+            playScale={[0.1, 0.1]}
+            id="footer"
+            key="5"
+          >
+            <Footer/>
+          </Element>
         ]}
       </div>
     );
