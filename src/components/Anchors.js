@@ -17,8 +17,7 @@ const Link = ScrollAnim.Link;
 const Element = ScrollAnim.Element;
 const ScrollOverPack = ScrollAnim.OverPack;
 const EventListener = ScrollAnim.Event;
-// ScrollAnim.scrollScreen.init({ scrollInterval: 600 });
-// ScrollAnim.scrollScreen({scrollInterval: 600});
+
 
 export default class Anchors extends Component {
   constructor(props) {
