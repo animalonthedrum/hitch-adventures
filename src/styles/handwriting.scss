@@ -1,0 +1,57 @@
+@keyframes handwrite {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  #writeHitch {
+      width: 50%;
+  }
+  #pathGet {
+      stroke-dasharray: 352;
+      stroke-dashoffset: 352;
+      animation: .7s .5s handwrite linear forwards;
+      stroke-width: 6;
+  }
+
+#pathT {
+    stroke-dasharray: 52;
+    stroke-dashoffset: 52;
+    animation: .4s 1.2s handwrite linear forwards;
+    stroke-width: 6;
+}
+#pathIn {
+    stroke-dasharray: 144;
+    stroke-dashoffset: 144;
+    animation: .3s 1.5s handwrite linear forwards;
+    stroke-width: 8; 
+}
+#pathDot1 {
+    stroke-dasharray: 12;
+    stroke-dashoffset: 12;
+    animation: .2s 1.8s handwrite linear forwards;
+    stroke-width: 8; 
+}
+#pathH {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: .2s 2s handwrite linear forwards;
+    stroke-width: 5; 
+}
+#pathHitch {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: .5s 2.2s handwrite linear forwards;
+    stroke-width: 7; 
+}
+#pathT2 {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: .2s 2.7s handwrite linear forwards;
+    stroke-width: 5; 
+}
+#pathDot2 {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: .2s 2.9s handwrite linear forwards;
+    stroke-width: 8; 
+}

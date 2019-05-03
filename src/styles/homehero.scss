@@ -62,15 +62,16 @@
         }
         h1 {
             transform: scale(1.5);
-            animation: zoomText 2s 1 .2s linear;
+            animation: zoomText 2s 1 .2s linear forwards;
             opacity: 1;
             @include font-title;
         }
         h2 {
-            animation: fadeUp 2.5s 1 0s linear;
-            opacity: 1;
+            animation: fadeUp .6s ease-in 2.8s 1 forwards;
+            opacity: 0;
             transform: translateY(0);
             margin:0;
+            transition: all .2s linear;
             @include h2;
 
             

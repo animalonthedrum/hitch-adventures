@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Slider from './Slider';
 
 
 
@@ -10,7 +10,7 @@ export default class Footer extends Component {
     return (
       <footer className="footerContainer">
         <div className="footerTop">
-        <div class="elfsight-app-d1278595-2e8c-4678-bc2e-05d2990e1d2b"></div>
+        <div className="elfsight-app-d1278595-2e8c-4678-bc2e-05d2990e1d2b"></div>
         </div>
         <div className="footerBottom">
           <div className="footerL">    
@@ -28,6 +28,7 @@ export default class Footer extends Component {
             <FontAwesomeIcon icon="phone" color='#fff' className='social' /> */}
           </div>
           <p className='cpyr'>©Hitch Adventures 2019</p>
+          <Slider/>
       </footer>
     )
   }

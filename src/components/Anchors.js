@@ -114,7 +114,7 @@ export default class Anchors extends Component {
             <TweenOne
               className="rotate-compass"
               key="0"
-              playScale={ 0.5}
+              playscale={ 0.5}
               animation={{ opacity: 1 }}
             >
               <Compass />
@@ -149,7 +149,7 @@ export default class Anchors extends Component {
             {/* <QueueAnim key="1" type="right"> */}
             <TweenOne animation={{ opacity:1 }}
                 style={{ opacity: 0 }}
-                playScale={ 0.5}
+                playscale={ 0.5}
                 key="title"
                 className="specs">
               <Specs />
@@ -173,7 +173,7 @@ export default class Anchors extends Component {
             always={false}
             //this can be taken off to trigger on scroll up and down
             // playScale={0.1}
-            playScale={[0.5, 0.1]}
+            playscale={[0.5, 0.1]}
             id="page3"
             key="3"
           >
@@ -250,7 +250,7 @@ export default class Anchors extends Component {
             className="pack-page page4"
             style={{ height: "100%", minHeight:'500px'  }}
             always={false}
-            playScale={[0.4, 0.6]}
+            playscale={[0.4, 0.6]}
             id="page4"
             key="4"
           >
@@ -259,8 +259,8 @@ export default class Anchors extends Component {
           <Element
             className="pack-page footer"
             style={{ minHeight:'200px'  }}
-            always={false}
-            playScale={[0.1, 0.1]}
+            // always={false} 
+            playscale={[0.1, 0.1]}
             id="footer"
             key="5"
           >
