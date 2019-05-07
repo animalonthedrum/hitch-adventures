@@ -5,6 +5,9 @@
   }
   #writeHitch {
       width: 50%;
+      @include mobile {
+          width: 75%;
+      }
   }
   #pathGet {
       stroke-dasharray: 352;

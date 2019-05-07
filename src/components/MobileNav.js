@@ -8,6 +8,7 @@ export default class MobileNav extends Component {
         show: false,
       };
       onClick = () => {
+        document.body.classList.toggle('mobile-nav-open');
         this.setState({
           show: !this.state.show,
         });

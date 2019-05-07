@@ -74,7 +74,6 @@ class AccordionItem extends React.Component {
               <p {...{ className: 'accordion-item__paragraph' }}>
                 {paragraph}
               </p>
-              <div className="test">TEST</div>
             </div>
            
           </div>

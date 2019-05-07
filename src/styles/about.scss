@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     padding: 100px 100px 0 100px;
     position: relative;
+    min-height: 800px;
     @include mobile {
         flex-direction: column;
         justify-content: center;
@@ -15,7 +16,7 @@
         position: absolute;
         top: 20px;
         left: 0;
-        height: 730px;
+        height: 80%;
         width: 100%;
         background-color: $robin;
         z-index: 1;
@@ -95,12 +96,12 @@
         @include mobile {
             width: 100%;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            width: 95%;
-            object-fit: contain;
-        }
+        // img {
+        //     max-width: 100%;
+        //     height: auto;
+        //     width: 95%;
+        //     object-fit: contain;
+        // }
        
         p {
             display: flex;

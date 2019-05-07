@@ -5,7 +5,7 @@ export default class Founder extends Component {
     return (
       <div className="founderContainer">
         <div className="founderL">
-        <img src={require("../images/Emma.png")}  alt="Founder Emma"/>
+        <img src={require("../images/emma.jpg")}  alt="Founder Emma"/>
         </div>
         <div className="founderR">
             <h2>From the founder</h2>

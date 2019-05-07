@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Slider from './Slider';
-
-
 
 export default class Footer extends Component {
 
@@ -15,20 +12,19 @@ export default class Footer extends Component {
         <div className="footerBottom">
           <div className="footerL">    
           <div className='footer-text'>
-          <h4>#HitchPlease</h4>
+          <h4>#HitchAdventures</h4>
           <p>Share your best snaps on Instagram with #HitchPlease, and if we feature it on our page you’ll earn a free night with Hitch.</p>
            
           </div>
          </div>
          <div className="footerR">
-          <p>Follow our Instagram</p>
+          <a href="https://www.instagram.com/hitchadventures/" target="_blank" rel="noopener noreferrer" >Follow our Instagram</a>
             </div>
             {/* <FontAwesomeIcon icon="envelope" color='#fff' className='social' />
             <FontAwesomeIcon icon={['fab', 'instagram']} color='#fff' className='social' />
             <FontAwesomeIcon icon="phone" color='#fff' className='social' /> */}
           </div>
-          <p className='cpyr'>©Hitch Adventures 2019</p>
-          <Slider/>
+          {/* <p className='cpyr'>©Hitch Adventures 2019</p> */}
       </footer>
     )
   }
