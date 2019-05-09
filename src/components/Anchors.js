@@ -220,7 +220,7 @@ export default class Anchors extends Component {
                 <TweenOne
                   className="dest"
                   animation={{ y: 0, opacity: 1, duration: 1500 }}
-                  key="1"
+                  key="2"
                   style={{ transform: "translateY(500px)", opacity: 0 }}
                 >
                   <img
@@ -233,7 +233,7 @@ export default class Anchors extends Component {
                 <TweenOne
                   className="dest"
                   animation={{ y: 0, opacity: 1, duration: 2000 }}
-                  key="1"
+                  key="3"
                   style={{ transform: "translateY(500px)", opacity: 0 }}
                 >
                   <img

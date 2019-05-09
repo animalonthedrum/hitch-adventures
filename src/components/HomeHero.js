@@ -1,14 +1,15 @@
 import React, { Component, Fragment } from "react";
 // import TweenOne from "rc-tween-one";
 import { Parallax } from "rc-scroll-anim";
-import heroVid from "../images/herovid.mp4";
+import heroVid from "../images/hitch.mp4";
+import heroPoster from "../images/first-frame.png";
 
 export default class HomeHero extends Component {
   render() {
     return (
       <Fragment>
         <div className="hero-container">
-          <video className="videoTag" playsInline autoPlay loop muted>
+          <video className="videoTag" playsInline autoPlay loop muted poster={heroPoster}>
             <source src={heroVid} type="video/mp4" />
           </video>
           <div className="hero-title">

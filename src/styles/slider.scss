@@ -7,6 +7,14 @@
   }
   .banner-anim-elem {
     height: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      @include mobile {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
   .banner-anim-elem > * {
     position: relative;
