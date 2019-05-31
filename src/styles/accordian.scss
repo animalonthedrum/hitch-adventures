@@ -120,6 +120,21 @@
     &:hover {
       cursor: pointer;
     }
+    p {
+      margin: 0;
+      font-family: $font-body;
+      font-size: 18px;
+      line-height:1.44; 
+      font-weight: 400;
+      color: $primary;
+    }
+    a {
+      color:inherit;
+      transition: color $transition-linear;
+      &:hover {
+        color: $mustard;
+      }
+    }
   }
   
   &__paragraph{

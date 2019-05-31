@@ -13,12 +13,14 @@ export default class Footer extends Component {
           <div className="footerL">    
           <div className='footer-text'>
           <h4>#HitchAdventures</h4>
-          <p>Share your best snaps on Instagram with #HitchAdventures, and if we feature it on our page you’ll earn a free night with Hitch.</p>
+          <p>Share your best snaps on Instagram and tag us @HitchAdventures for a chance to be featured on our page.</p>
            
           </div>
          </div>
          <div className="footerR">
           <a href="https://www.instagram.com/hitchadventures/" target="_blank" rel="noopener noreferrer" >Follow our Instagram</a>
+          <br/>
+          <a href="mailto:hello@hitchadventures?Subject=Hitch%20Adventures" target="_top">hello@hitchadventures</a>
             </div>
             {/* <FontAwesomeIcon icon="envelope" color='#fff' className='social' />
             <FontAwesomeIcon icon={['fab', 'instagram']} color='#fff' className='social' />

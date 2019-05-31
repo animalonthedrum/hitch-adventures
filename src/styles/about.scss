@@ -18,7 +18,8 @@
         left: 0;
         height: 80%;
         width: 100%;
-        background-color: $robin;
+        // background-color: $robin;
+        background-color: $cloudy;
         z-index: 1;
         @include mobile {
             width: 100%!important;

@@ -12,11 +12,11 @@ const data = [
     },
   {
     title: 'You have the power.',
-    paragraph:'We got the power. Solar powered battery keeps a steady feed on our 12v power in Hitch. Anything you charge with a USB (phones, tablets, camera batteries, flashlights, etc..) will be compatible. If you end up at a site with full hookups, we also have a 120v you can plug larger items into and use the AC.'
+    paragraph:'Solar powered battery keeps a steady feed on our 12v power in Hitch. Anything you charge with a USB (phones, tablets, camera batteries, flashlights, etc..) will be compatible. If you end up at a site with full hookups, we also have a 120v you can plug larger items into and use the AC.'
   },
   {
     title: 'Totally Towable.',
-  paragraph:'Weighing in at 1,500 lbs, Hitch can be pulled with most vehicles.  Not sure what your vehicle can do? (Experience towing trailers is a plus!)'
+  link: <p>Weighing in at 1,500 lbs, Hitch can be pulled with most vehicles. Not sure what your vehicle can do? Check out <a href='https://rv.campingworld.com/towguide' target='_blank' rel="noopener noreferrer" alt='tow link'>this tow guide.</a> (Experience towing trailers is a plus!)</p>
   }
 ]
 
@@ -49,7 +49,8 @@ class AccordionItem extends React.Component {
     const {
       props: {
         title,
-        paragraph
+        paragraph,
+        link
       },
       state: {
         opened
@@ -74,6 +75,7 @@ class AccordionItem extends React.Component {
               <p {...{ className: 'accordion-item__paragraph' }}>
                 {paragraph}
               </p>
+              {link}
             </div>
            
           </div>

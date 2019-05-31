@@ -213,7 +213,7 @@ export default class Anchors extends Component {
                     alt="Madeline Islands"
                   />
                   <p className='location'>Madeline Island, WI</p>
-                  <p>3 hours away</p>
+                  <p>4 hours away</p>
                 </TweenOne>
               </div>
               <div className="inspirationR">

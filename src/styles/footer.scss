@@ -45,10 +45,12 @@
         }
         .footerR {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
             @include mobile {
                 justify-content: flex-start;
+                align-items: flex-start;
             }
             a {
                 color: #fff;
