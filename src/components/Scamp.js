@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import { Parallax } from 'rc-scroll-anim';
 import Slider from './Slider';
 
-export default class About extends Component {
+export default class Scamp extends Component {
   render() {
     return (
         <div className="aboutContainer">
         <div className='aboutL'>
-          <h3>Hitch</h3>
-          <h4>1945 Custom Teardrop</h4>
-          <p>This teardrop camper, originally used to fetch hot air balloon baskets after flights, has been remodeled and is perfect for any size adventure. Staying true to the teardrop mentality, it's outfitted with all your basics and allows you to truly enjoy the place you're parked.</p>
+          <h3>Scamp</h3>
+          <h4>1976 Scamp 13’</h4>
+          <p>After sitting still for far too many years, this little Scamp has been refurbished and is ready to hit the road. It’s a perfectly sized adventure mobile; whether you’re heading up north for a weekend or taking a cross country roadtrip. Outfitted with a few extra amenities, it includes running water, a fridge and a propane stove.</p>
           <ul>
-            <li>Sleeping quarters fit for a queen.</li>
-              <li>Refurbished using real cedar planks.</li>
-              <li>Pop up kitchen ready in seconds.</li>
+            <li>Kitchen table that converts to bed for two.</li>
+              <li>Full indoor kitchen.</li>
+              <li>Roomy space to hang out on rainy days.</li>
           </ul>
-          <a href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1945_custom_teardrop-camper_112723-listing" target="_blank" rel="noopener noreferrer" alt="Book now">Book Now</a>          
+          <a href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1976_scamp_13_175258-listing" target="_blank" rel="noopener noreferrer" alt="Book now">Book Now</a>          
         </div>
         <div className='aboutR'>
         <Parallax
