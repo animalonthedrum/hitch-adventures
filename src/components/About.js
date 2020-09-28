@@ -14,7 +14,7 @@ export default class About extends Component {
               <li>Refurbished using real cedar planks.</li>
               <li>Personal mini library.</li>
           </ul>
-          <a href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1945_custom_teardrop-camper_112723-listing" target="_blank" rel="noopener noreferrer" alt="Book now">Book Now</a>          
+          <a href="https://www.outdoorsy.com/pro/627371" target="_blank" rel="noopener noreferrer" alt="Book now">Book Now</a>          
         </div>
         <div className='aboutR'>
         <Parallax

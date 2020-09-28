@@ -34,7 +34,7 @@ export default class MobileNav extends Component {
             <li><Link className="nav-list" to="page1" onClick={this.onClick}>About</Link></li>
             <li><Link className="nav-list" to="page2" onClick={this.onClick}>Specs</Link></li>
             <li><Link className="nav-list" to="page3" onClick={this.onClick}>Inspiration</Link></li>
-            <li><a className="button" href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1945_custom_teardrop-camper_112723-listing" alt="Book Now" onClick={this.onClick}>Book Now</a></li>
+            <li><a className="button" href="https://www.outdoorsy.com/pro/627371" alt="Book Now" onClick={this.onClick}>Book Now</a></li>
               </ul>
             </div>,
           ] : null}

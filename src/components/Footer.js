@@ -7,7 +7,7 @@ export default class Footer extends Component {
     return (
       <footer className="footerContainer">
         <div className="footerTop">
-        <div class="elfsight-app-30f34e06-8dbf-420e-a76f-0c0a5edbd1f3"></div>
+        <div className="elfsight-app-30f34e06-8dbf-420e-a76f-0c0a5edbd1f3"></div>
         </div>
         <div className="footerBottom">
           <div className="footerL">    

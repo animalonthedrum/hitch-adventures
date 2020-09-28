@@ -82,7 +82,7 @@ export default class Anchors extends Component {
             <li>
               <a
                 className="button"
-                href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1945_custom_teardrop-camper_112723-listing"
+                href="https://www.outdoorsy.com/pro/627371"
                 alt="Book Now"
               >
                 Book Now
@@ -119,14 +119,12 @@ export default class Anchors extends Component {
             >
               <Compass />
               <div className="compassText">
-                <h3>Currently Camping out of Minneapolis, MN</h3>
+                <h3>Great Things Come in Small Packages</h3>
                 <p>
-                  But we don't like to stay put for long. Check back to see
-                  where we're currently based from and where we're heading to
-                  next.
+                Hitch Adventures seeks out and renovates small, towable, vintage campers that allow people to get out and explore. Each of our campers are intentionally designed with practical amenities and thoughtful small details. We give you everything you need for a comfortable camping experience and nothing you don’t.
                 </p>
                 <a
-                  href="https://www.outdoorsy.com/rv-rental/minneapolis_mn/1945_custom_teardrop-camper_112723-listing"
+                  href="https://www.outdoorsy.com/pro/627371"
                   alt="Book now"
                 >
                   Book Now
