@@ -32,9 +32,6 @@ $page-padding:100px;
   padding-bottom: $page-padding;
 }
 .page3 {
-    // background-color: $cloud;
-    // background-color: $robin;
-    background-color: $cloudy;
     padding: 100px 0 100px 0;
     @include mobile {
       padding: 100px 0;

@@ -9,7 +9,9 @@ import HomeHero from "./HomeHero";
 import MobileNav from "./MobileNav";
 import Compass from "./Compass";
 import About from "./About";
+import Scamp from "./Scamp";
 import Specs from "./Specs";
+import ScampSpecs from "./ScampSpecs";
 import Founder from "./Founder";
 import Footer from "./Footer";
 
@@ -70,13 +72,13 @@ export default class Anchors extends Component {
               </Link>
             </li>
             <li>
-              <Link className="nav-list" to="page2" onFocus={this.onFocus}>
-                Specs
+              <Link className="nav-list" to="hitch" onFocus={this.onFocus}>
+                Hitch
               </Link>
             </li>
             <li>
-              <Link className="nav-list" to="page3" onFocus={this.onFocus}>
-                Inspiration
+              <Link className="nav-list" to="scamp" onFocus={this.onFocus}>
+                Scamp
               </Link>
             </li>
             <li>
@@ -131,7 +133,6 @@ export default class Anchors extends Component {
                 </a>
               </div>
             </TweenOne>
-            <About/>
           </ScrollOverPack>,
      
 
@@ -139,9 +140,10 @@ export default class Anchors extends Component {
             className="pack-page page2"
             style={{ backgroundColor: "#fff", minHeight:'500px' }}
             always={false}
-            id="page2"
+            id="hitch"
             key="2"
           >
+          <About/>
             {/* <div className="accord" key="title"> */}
 
             {/* <QueueAnim key="1" type="right"> */}
@@ -152,17 +154,6 @@ export default class Anchors extends Component {
                 className="specs">
               <Specs />
               </TweenOne>
-            {/* </QueueAnim> */}
-
-            {/* <Animate key="0" transitionName="fade" transitionAppear>
-            <div className="demo-content2" />
-          </Animate> */}
-            {/* <TweenOne
-              className="demo-content2"
-              animation={{ y: 0, opacity: 1 }}
-              key="1"
-              style={{ transform: "translateY(200px)", opacity: 0 }}
-            /> */}
           </ScrollOverPack>,
 
           <ScrollOverPack
@@ -172,78 +163,19 @@ export default class Anchors extends Component {
             //this can be taken off to trigger on scroll up and down
             // playScale={0.1}
             playscale={[0.5, 0.1]}
-            id="page3"
+            id="scamp"
             key="3"
           >
-            <div className="inspirationContainer">
-              <div className="inspirationL">
-                <TweenOne
-                  animation={{ opacity: 1 }}
-                  style={{ opacity: 0 }}
-                  key="title"
-                  className="inspiration-title"
-                >
-                  <h4>Looking for inspiration?</h4>
-                  <p>
-                    Finding the perfect vacation spot can be overwhelming, so
-                    we've compiled a list of our favorite destinations as well
-                    as the time it takes to get there.{" "}
-                  </p>
-                </TweenOne>
-                <Animate key="0" transitionName="fade" transitionAppear>
-                  <div className="dest">
-                    <img
-                      src={require("../images/inspiration/BoundaryWaters.png")}
-                      alt="Boundary Waters"
-                    />
-                    <p className='location'>Boundary Waters Canoe Wilderness Area</p>
-                    <p>5 hours away</p>
-                  </div>
-                </Animate>
-                <TweenOne
-                  className="dest"
-                  animation={{ y: 0, opacity: 1, duration: 1000 }}
-                  key="1"
-                  style={{ transform: "translateY(100px)", opacity: 0 }}
-                >
-                  <img
-                    src={require("../images/inspiration/MadelineIsland.png")}
-                    alt="Madeline Islands"
-                  />
-                  <p className='location'>Madeline Island, WI</p>
-                  <p>4 hours away</p>
-                </TweenOne>
-              </div>
-              <div className="inspirationR">
-                <TweenOne
-                  className="dest"
-                  animation={{ y: 0, opacity: 1, duration: 1500 }}
-                  key="2"
-                  style={{ transform: "translateY(500px)", opacity: 0 }}
-                >
-                  <img
-                    src={require("../images/inspiration/northShore.png")}
-                    alt="North Shore, MN"
-                  />
-                  <p className='location'>North Shore, MN</p>
-                  <p>4 hours away</p>
-                </TweenOne>
-                <TweenOne
-                  className="dest"
-                  animation={{ y: 0, opacity: 1, duration: 2000 }}
-                  key="3"
-                  style={{ transform: "translateY(500px)", opacity: 0 }}
-                >
-                  <img
-                    src={require("../images/inspiration/LaCrosse.png")}
-                    alt="La Crosse WI"
-                  />
-                  <p className='location'>La Crosse, WI </p>
-                  <p>3 hours away</p>
-                </TweenOne>
-              </div>
-            </div>
+          <TweenOne animation={{ opacity:1 }}
+          style={{ opacity: 0 }}
+          playscale={ 0.5}
+          key="title"
+          className="specs">
+          <Scamp/>
+        </TweenOne>
+        <ScampSpecs/>
           </ScrollOverPack>,
+        
           <ScrollOverPack
             className="pack-page page4"
             style={{ height: "100%", minHeight:'500px'  }}

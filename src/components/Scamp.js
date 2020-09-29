@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Parallax } from 'rc-scroll-anim';
-import Slider from './Slider';
+import ScampSlider from './ScampSlider';
 
 export default class Scamp extends Component {
   render() {
     return (
-        <div className="aboutContainer">
+        <div className="aboutContainer scamp-1">
         <div className='aboutL'>
           <h3>Scamp</h3>
           <h4>1976 Scamp 13’</h4>
@@ -24,7 +24,7 @@ export default class Scamp extends Component {
           className="about-img"
         >
         {/* <img src={require("../images/maidenVoyage.png")}  alt="Maiden Voyage"/> */}
-        <Slider/>
+        <ScampSlider/>
         {/* <p className="caption">The Maiden Voyage</p>
         <p className="captionDate">July '19</p> */}
         </Parallax>

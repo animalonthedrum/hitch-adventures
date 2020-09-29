@@ -23,15 +23,12 @@ export default class About extends Component {
           style={{ transform: 'translate(5%, 10%)' }}
           className="about-img"
         >
-        {/* <img src={require("../images/maidenVoyage.png")}  alt="Maiden Voyage"/> */}
         <Slider/>
-        {/* <p className="caption">The Maiden Voyage</p>
-        <p className="captionDate">July '19</p> */}
         </Parallax>
         </div>
         <Parallax
           animation={{ x: 0, y:0 }}
-          style={{ transform: 'translate(50%, -15%)', width:'80%' }}
+          style={{ transform: 'translate(-100%, -15%)', width:'80%' }}
           className="about-bg"
         >
         </Parallax>

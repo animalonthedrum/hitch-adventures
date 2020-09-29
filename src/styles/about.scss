@@ -1,4 +1,14 @@
 .aboutContainer {
+    &.scamp-1 {
+        .about-bg {
+            background-color: $sage;
+            left: 0;
+        }
+        .aboutR {
+            justify-content: flex-end;
+        }
+        
+    }
     display: flex;
     flex-wrap: wrap;
     padding: 100px 100px 0 100px;
@@ -15,7 +25,7 @@
     .about-bg{
         position: absolute;
         top: 20px;
-        left: 0;
+        right: 0;
         height: 80%;
         width: 100%;
         // background-color: $robin;
@@ -93,7 +103,7 @@
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        align-items: center;
+        align-items: flex-end;
         @include mobile {
             width: 100%;
         }
